@@ -1,0 +1,13 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: hallo-karo
+spec:
+  template:
+    spec:
+      containers:
+      - name: hallo-karo
+        image: perl:5.34.0
+        command: ["echo", "Hallo ich bin Karo!"]
+      restartPolicy: Never
+  backoffLimit: 4
