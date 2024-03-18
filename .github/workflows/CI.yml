@@ -1,10 +1,6 @@
 name: Node.js CI
 
-on:
-  push:
-    branches: [ "klausur-bearbeitung" ]
-  pull_request:
-    branches: [ "klausur-bearbeitung" ]
+on: [push]
 
 permissions:
   contents: write
